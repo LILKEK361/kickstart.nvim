@@ -26,5 +26,5 @@ return {
   },
   },
 
-  require('plugins.nvim-tree'),
+  require('nvim-tree'),
 }
