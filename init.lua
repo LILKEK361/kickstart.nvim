@@ -565,6 +565,7 @@ require('lazy').setup({
             vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
               buffer = event.buf,
               group = highlight_augroup,
+
               callback = vim.lsp.buf.clear_references,
             })
 
@@ -754,6 +755,11 @@ require('lazy').setup({
       --  into multiple repos for maintenance purposes.
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
+      'hrsh7th/cmp-vsnip',
+      'hrsh7th/vim-vsnip',
+      'simrat39/rust-tools.nvim',
+      'nvim-lua/popup.nvim',
+      'nim-lua/plenary.nvim',
     },
     config = function()
       -- See `:help cmp`
